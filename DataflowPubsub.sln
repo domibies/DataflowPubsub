@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataflowPubsub", "DataflowPubsub\DataflowPubsub.csproj", "{836DD3C5-ACF9-4E44-AB90-8C98E8A4B8EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataflowPubsub.Tests", "DataflowPubsub.Tests\DataflowPubsub.Tests.csproj", "{A25F91B2-8489-426D-8E85-897F1AC849AF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3DC2B418-1E47-4C96-9450-FEC850FB9939}"
+	ProjectSection(SolutionItems) = preProject
+		readme.md = readme.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{836DD3C5-ACF9-4E44-AB90-8C98E8A4B8EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{836DD3C5-ACF9-4E44-AB90-8C98E8A4B8EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{836DD3C5-ACF9-4E44-AB90-8C98E8A4B8EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{836DD3C5-ACF9-4E44-AB90-8C98E8A4B8EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A25F91B2-8489-426D-8E85-897F1AC849AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A25F91B2-8489-426D-8E85-897F1AC849AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A25F91B2-8489-426D-8E85-897F1AC849AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A25F91B2-8489-426D-8E85-897F1AC849AF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {625E454C-8077-4258-97BA-FF54BBEB33D7}
+	EndGlobalSection
+EndGlobal
