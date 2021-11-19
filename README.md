@@ -1,3 +1,4 @@
+[![.NET](https://github.com/domibies/DataflowPubsub/actions/workflows/mydotnet.yml/badge.svg)](https://github.com/domibies/DataflowPubsub/actions/workflows/mydotnet.yml)
 
 ### DataflowPubsub 
 

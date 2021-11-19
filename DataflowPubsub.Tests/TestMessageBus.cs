@@ -224,6 +224,7 @@ namespace TestProject
                     {
                         // we wil receive "0", "3", "6" and "9"
                         var textMessage = await subscriber.Receiver.ReceiveAsync(cancelSource.Token);
+                        countMessages++;
                     }
 
                 }
