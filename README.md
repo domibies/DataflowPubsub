@@ -8,6 +8,11 @@ The implementation uses Dataflow (Task Parallel Library) components.
 
 #### How To Use
 
+Add a reference to the nuget package 
+```
+dotnet add package DataflowPubsub
+```
+
 Create subscribers trough an instance of `MessageBus`. You subscribe to any `BaseMessage` derived type (a few basic types like `TextMessage` and `BinaryMessage` are defined in the library). Any message can have a 'topic' that can be used in filtering. (Any public message properties can be filtered upon)
 
 ```csharp
