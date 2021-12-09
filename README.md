@@ -31,3 +31,5 @@ Subscribers instances can then be used to read asynchronously from the filtered 
 ```csharp
 var message = await subscriber.Receiver.ReceiveAsync();
 ```
+
+![name-of-you-image](https://github.com/domibies/DataflowPubsub/blob/31f09e60c322372bf453e86e91eae32809131586/Images/mermaid-pubsubdataflow.png)
