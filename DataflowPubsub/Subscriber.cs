@@ -7,19 +7,17 @@ namespace DataflowPubsub
     /// <summary>
     /// Encapsulates a subscription to a message type T that derives from BaseMessage.
     /// The application can read from the subscriber through the exposed 'Receiver'
-    /// property. A subscriber can be created independly and connected to a source of 
+    /// property. A subscriber can be created independently and connected to a source of 
     /// 'BaseMessage'. But usually, the subscriber is created by an instance of 'MessageBus'.
     /// </summary>
     /// <typeparam name="T">The type to subscribe to</typeparam>
     public class Subscriber<T> : IDisposable where T : BaseMessage
     {
-        // the actual 'queue' that holds the filtered messages
-        private readonly BufferBlock<T> subscriptionQueue;
         /// <summary>
         /// The exposed 'Receiver' that can be read/received from
         /// </summary>
-        public ISourceBlock<T> Receiver => subscriptionQueue;
-        // this block casts & copies the message instances to the internal queue
+        public ISourceBlock<T> Receiver => copyToDerived; 
+        // this block casts & copies the message instances & fucntions as the internal buffer
         private readonly TransformBlock<BaseMessage, T> copyToDerived;
         private bool disposed;
         private IDisposable sourceLink = null;
@@ -31,10 +29,8 @@ namespace DataflowPubsub
         /// <param name="filter">The optional subscription filter</param>
         public Subscriber(ISourceBlock<BaseMessage> source, Predicate<T> filter = null)
         {
-            subscriptionQueue = new BufferBlock<T>();
             copyToDerived = new TransformBlock<BaseMessage, T>((o) => (T)o.DeepCopy());
 
-            copyToDerived.LinkTo(subscriptionQueue);
             _linkFrom(source, filter);
         }
 
