@@ -5,10 +5,11 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataflowPubsub", "DataflowPubsub\DataflowPubsub.csproj", "{836DD3C5-ACF9-4E44-AB90-8C98E8A4B8EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataflowPubsub.Tests", "DataflowPubsub.Tests\DataflowPubsub.Tests.csproj", "{A25F91B2-8489-426D-8E85-897F1AC849AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataflowPubsub.Tests", "DataflowPubsub.Tests\DataflowPubsub.Tests.csproj", "{A25F91B2-8489-426D-8E85-897F1AC849AF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3DC2B418-1E47-4C96-9450-FEC850FB9939}"
 	ProjectSection(SolutionItems) = preProject
+		Images\mermaid-pubsubdataflow.png = Images\mermaid-pubsubdataflow.png
 		readme.md = readme.md
 	EndProjectSection
 EndProject

@@ -6,6 +6,10 @@ A class library for an in memory, asynchronous message based publish subscribe p
 
 The implementation uses Dataflow (Task Parallel Library) components.
 
+### What's new
+
+Version 1.1.0, 9 dec 2021 : removed superfluous BufferBlock in subscriber
+
 #### How To Use
 
 Add a reference to the nuget package 
